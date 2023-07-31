@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+    <script src='https://8x8.vc/vpaas-magic-cookie-4b2dfff7642b4948a0f2099a2af600fa/external_api.js' async></script>
+    <style>html, body, #jaas-container { height: 100%; }</style>
+    <script type="text/javascript">
+      window.onload = () => {
+        const api = new JitsiMeetExternalAPI("8x8.vc", {
+          roomName: "vpaas-magic-cookie-4b2dfff7642b4948a0f2099a2af600fa/IntellicareConsultation",
+          parentNode: document.querySelector('#jaas-container'),
+                        // Make sure to include a JWT if you intend to record,
+                        // make outbound calls or use any other premium features!
+                        // jwt: "null"
+        });
+      }
+    </script>
+  <body><div id="jaas-container" /></body>
+</html>
+
+  
